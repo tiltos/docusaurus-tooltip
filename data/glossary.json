@@ -1,0 +1,18 @@
+{
+  "subject-area": [
+    {
+      "id": "topic",
+      "name": "Topic",
+      "description": "This is the body of the tooltip. The link below can be left empty. If present it shows a 'more info button",
+      "link": "/docs/x"
+    }
+  ],
+  "another-subject-area": [
+    {
+      "id": "different-topic",
+      "name": "Different Topic",
+      "description": "This one doesn't have a More Info link",
+      "link": ""
+    }
+  ]
+}

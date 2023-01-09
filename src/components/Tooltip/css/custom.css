@@ -1,0 +1,35 @@
+
+/* tooltip */
+
+.tooltip-link {
+  border-bottom: 2px dotted var(--ifm-color-primary);
+  position: relative;
+  cursor: pointer;
+  padding-top: 5px;
+  margin: 0 3px;
+}
+
+.tooltip-bubble {
+  position: absolute;
+  border-radius: 3px;
+  background: var(--search-local-modal-background, var(--ifm-background-color));
+  border: 1px solid var(--ifm-toc-border-color);
+  padding: 15px;
+  white-space: pre-wrap;
+  width: 300px;
+  transform: translate(-150px, -100%);
+}
+
+.tooltip-bubble::after {
+  content: " ";
+  position: absolute;
+  top: 100%; /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  pointer-events: none;
+  border-color: var(--ifm-toc-border-color) transparent transparent transparent;
+  height: 0;
+  width: 0;
+}
